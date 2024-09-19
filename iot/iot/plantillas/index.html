@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IOT EN CASA</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/normalize.css' %}">
+    <link rel="stylesheet" href="{% static '/styles.css' %}">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="{% static 'img/inicio.png' %}" alt="Logo inicio">
+                </a>
+
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="{% static 'img/barras.svg' %}" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <h1 class=" centrar-texto">MENU</h1>
+                    <a href="iluminacioninstantanea.html">Iluminacion instantanea</a>
+                    <a href="iluminacionprogramada.html">Iluminacion programada</a>
+                    <a href="iluminacionsensor.html">Iluminacion por sensor</a>
+                    <br>
+                    <br>
+                    <a href="temperaturainstantanea.html">Temperatura instantanea</a>
+                    <a href="temperaturaprogramada.html">Temperatura programada</a>
+                    <a href="temperaturasensor.html">Temperatura por sensor</a>
+                    <br>
+                    <br>
+                    <a href="riegoinstantaneo.html">Riego instantaneo</a>
+                    <a href="riegoprogramado.html">Riego programado</a>
+                    <a href="riegosensor.html">Riego por sensor</a>
+                    <br>
+                    <br>
+                    <a href="alarmainstantanea.html">Alarma instantanea</a>
+                    <a href="alarmaprogramada.html">Alarma programada</a>
+                    <br>
+                    <br>
+                    <a href="aperturapuerta.html">Apertura de puerta</a>
+                    <br>
+                    <br>
+                    <a href="general.html">General</a>
+
+                </nav>
+            </div>
+            <h1>IOT EN CASA </h1>
+        </div>
+        <!-- contenedor -->
+    </header>
+
+    <main>
+        <section class="contenedor seccion">
+            <h2 class="fw-300 centrar-texto">Algunos beneficios</h2>
+
+            <div class="iconos-nosotros">
+                <div class="icono">
+                    <img src="{% static 'img/icono1.png' %}" alt="Icono iluminacion">
+                    <h3>Iluminacion</h3>
+                    <p>La iluminacion es uno de los aspectos mas importantes en los hogares, al automatizarla logramos grandes beneficios.</p>
+                </div>
+
+                <div class="icono">
+                    <img src="{% static 'img/icono2.png' %}" alt="Icono riego">
+                    <h3>Riego</h3>
+                    <p>Cuidar el agua de nuestro planeta es de vital importancia, al automatizarlo no solo ahorramos gastos si no tambien cuidamos el lugar donde vivimos.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>IOT</h2>
+            <p>Tareas automatizadas en el hogar desde cualquier parte del mundo</p>
+
+        </div>
+    </section>
+
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+
+            <p class="copyright">Maestria Ingenieria USAC </p>
+        </div>
+    </footer>
+</body>
+
+</html>
